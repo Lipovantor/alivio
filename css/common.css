@@ -396,6 +396,79 @@ template {
   padding: 20px 50px;
 }
 
+.appeal {
+  padding: 170px 0 50px;
+}
+.appeal .how {
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.appeal .how__col {
+  width: 50%;
+}
+.appeal .how__label {
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 157%;
+  color: #424242;
+}
+.appeal .how__title {
+  max-width: 585px;
+  font-family: "Georgia";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 157%;
+  color: #01996D;
+}
+.appeal .how__text {
+  font-family: "Lato";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #424242;
+}
+.appeal .steps {
+  display: flex;
+  justify-content: space-between;
+}
+.appeal .steps .step {
+  width: 390px;
+}
+.appeal .steps .step:nth-child(2) {
+  margin-top: 280px;
+}
+.appeal .steps .step:nth-child(3) {
+  margin-top: 50px;
+}
+.appeal .steps .step__head {
+  position: relative;
+  padding-bottom: 55px;
+}
+.appeal .steps .step__label {
+  position: absolute;
+  top: -115px;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 150px;
+  color: rgba(1, 153, 109, 0.2);
+}
+.appeal .steps .step__title {
+  padding-left: 80px;
+}
+.appeal .steps .step__text {
+  font-family: "Lato";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #424242;
+}
+.appeal .steps .step__img {
+  width: 100%;
+  border-radius: 12px;
+}
+
 .main {
   min-height: 50vh;
 }

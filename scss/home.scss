@@ -29,3 +29,90 @@
     padding: 20px 50px;
   }
 }
+
+.appeal {
+  padding: 170px 0 50px;
+
+  .how {
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+
+    &__col {
+      width: 50%;
+    }
+
+    &__label {
+      font-family: 'Lato';
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 157%;
+      color: $text-color;
+    }
+
+    &__title {
+      max-width: 585px;
+      font-family: 'Georgia';
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 157%;
+      color: $main-color;
+    }
+
+    &__text {
+      font-family: 'Lato';
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 150%;
+      color: #424242;
+    }
+  }
+
+  .steps {
+    display: flex;
+    justify-content: space-between;
+    
+    .step {
+      width: 390px;
+
+      &:nth-child(2) {
+        margin-top: 280px;
+      }
+
+      &:nth-child(3) {
+        margin-top: 50px;
+      }
+     
+      &__head {
+        position: relative;
+        padding-bottom: 55px;
+      }
+
+      &__label {
+        position: absolute;
+        top: -115px;
+        font-family: 'Georgia';
+        font-weight: 400;
+        font-size: 150px;
+        color: rgba(1, 153, 109, 0.2);
+      }
+
+      &__title {
+        padding-left: 80px;
+      }
+
+      &__text {
+        font-family: 'Lato';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        color: $text-color;
+      }
+
+      &__img {
+        width: 100%;
+        border-radius: 12px;
+      }
+    }
+  }
+}
