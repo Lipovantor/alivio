@@ -1,0 +1,31 @@
+.promo {
+  padding: 175px 0 335px;
+  background-image: url("../img/promo-bg.jpg");
+  background-size: cover;
+  background-position: center;
+
+  &__title {
+    max-width: 440px;
+    margin-bottom: 30px;
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 74px;
+    color: $main-color;
+  }
+
+  &__text {
+    max-width: 420px;
+    margin-bottom: 45px;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+    color: $text-new-color;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 20px 50px;
+  }
+}

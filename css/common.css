@@ -367,8 +367,37 @@ template {
   font-weight: 700;
   src: url("../fonts/Georgia-Bold.woff") format("woff"), url("../fonts/Georgia-Bold.woff2") format("woff2"), url("../fonts/Georgia-Bold.eot") format("embedded-opentype"), url("../fonts/Georgia-Bold.ttf") format("truetype");
 }
-a {
-  text-decoration: none;
+.promo {
+  padding: 175px 0 335px;
+  background-image: url("../img/promo-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.promo__title {
+  max-width: 440px;
+  margin-bottom: 30px;
+  font-family: "Georgia";
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 74px;
+  color: #01996D;
+}
+.promo__text {
+  max-width: 420px;
+  margin-bottom: 45px;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 31px;
+  color: #484848;
+}
+.promo__link {
+  display: inline-block;
+  padding: 20px 50px;
+}
+
+.main {
+  min-height: 50vh;
 }
 
 .container {
@@ -388,11 +417,15 @@ a {
   border: 1px solid #01996D;
   background-color: #01996D;
   color: #ffffff;
-  transition: color 0.4s, background-color 0.4s;
 }
 .button_green:hover {
-  background-color: #ffffff;
+  transition: color 0.4s, background-color 0.4s;
+  background-color: transparent;
   color: #01996D;
+}
+
+a {
+  text-decoration: none;
 }
 
 .header {
@@ -430,10 +463,6 @@ a {
   font-size: 20px;
   line-height: 24px;
   color: #000000;
-}
-
-main {
-  min-height: 50vh;
 }
 
 .footer {
