@@ -1,4 +1,81 @@
 @import "normalize";
 @import "fonts";
 @import "variables";
-@import "pages/home"
+@import "home";
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1368px;
+  margin: 0 auto;
+}
+
+.button {
+  padding: 13px 50px;
+  border-radius: 4px;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+
+  &_green {
+    border: 1px solid $main-color;
+    background-color: $main-color;
+    color: $light-color;
+    transition: color .4s, background-color .4s;
+
+    &:hover {
+      background-color: $light-color;
+      color: $main-color;
+    }
+  }
+}
+
+// Header
+.header {
+  padding: 30px 0;
+  background-color: $light-color;
+  font-family: 'Lato';
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+
+    &__img {
+      width: 80px;
+    }
+  }
+
+  .menu {
+    width: 100%;
+    max-width: 560px;
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: $text-alt-color;
+    }
+  }
+
+  .proposal {
+    display: flex;
+    align-items: center;
+
+    &__signin {
+      margin-right: 35px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: $dark-color;
+    }
+  }
+}
