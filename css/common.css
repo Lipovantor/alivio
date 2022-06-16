@@ -432,4 +432,28 @@ a {
   color: #000000;
 }
 
+main {
+  min-height: 50vh;
+}
+
+.footer {
+  padding: 95px 0 145px;
+  background-color: #245852;
+  font-family: "Lato";
+}
+.footer .logo__img {
+  width: 108px;
+}
+.footer .footer-menu {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-menu__item {
+  margin-top: 60px;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=common.css.map */

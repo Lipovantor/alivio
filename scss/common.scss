@@ -79,3 +79,34 @@ a {
     }
   }
 }
+
+main {
+  min-height: 50vh;
+}
+
+//Footer
+.footer {
+  padding: 95px 0 145px;
+  background-color: $second-color;
+  font-family: 'Lato';
+
+  .logo {
+
+    &__img {
+      width: 108px;
+    }
+  }
+
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+      margin-top: 60px;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 30px; 
+      color: $light-color;
+    }
+  }
+}
