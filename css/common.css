@@ -682,6 +682,32 @@ section {
   min-height: 50vh;
 }
 
+.btn-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background: transparent;
+  border: 1px solid #01996D;
+  color: #01996D;
+  cursor: pointer;
+  border-radius: 2px;
+  display: none;
+}
+.btn-to-top:hover {
+  transition: 0.4s;
+  color: #ffffff;
+  background: #01996D;
+}
+
+.btn-to-top-show {
+  display: block;
+}
+
 .container {
   max-width: 1368px;
   margin: 0 auto;
@@ -711,6 +737,9 @@ a {
 }
 
 .header {
+  position: sticky;
+  z-index: 99999;
+  top: 0;
   padding: 30px 0;
   background-color: #ffffff;
   font-family: "Lato";
@@ -719,6 +748,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.header .logo:hover {
+  transition: 0.6s;
+  transform: rotateX(360deg);
 }
 .header .logo__img {
   width: 80px;
@@ -746,6 +779,10 @@ a {
   line-height: 24px;
   color: #000000;
 }
+.header .proposal__signin:hover {
+  transition: 0.4s;
+  color: #01996D;
+}
 
 .footer {
   padding: 95px 0 145px;
@@ -760,11 +797,16 @@ a {
   flex-direction: column;
 }
 .footer .footer-menu__item {
+  width: fit-content;
   margin-top: 60px;
   font-weight: 600;
   font-size: 25px;
   line-height: 30px;
   color: #ffffff;
+}
+.footer .footer-menu__item:hover {
+  transition: 0.4s;
+  color: #01996D;
 }
 
 .link-anima {
