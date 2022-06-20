@@ -27,6 +27,10 @@ section {
   border-radius: 2px;
   display: none;
 
+  @media (max-width: 1024px) {
+    display: none;
+  }
+
   &:hover {
     transition: .4s;
     color: $light-color;
@@ -36,11 +40,23 @@ section {
 
 .btn-to-top-show {
   display: block;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 }
 
 .container {
   max-width: 1368px;
   margin: 0 auto;
+
+  @media (max-width: 1500px) {
+    padding: 0 40px;
+  }
+
+  @media (max-width: 1280px) {
+    padding: 0 20px;
+  }
 }
 
 .button {
@@ -50,6 +66,12 @@ section {
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
+
+  @media (max-width: 1280px) {
+    padding: 12px 30px;
+    font-size: 18px;
+    line-height: 20px;
+  }
 
   &_green {
     border: 1px solid $main-color;
@@ -107,6 +129,18 @@ a {
       line-height: 24px;
       color: $text-alt-color;
     }
+
+    @media (max-width: 1280px) {
+      display: none;
+    }
+  }
+
+  .burger {
+    margin-left: 20px;
+
+    @media (max-width: 1280px) {
+      display: block;
+    }
   }
 
   .proposal {
@@ -119,6 +153,10 @@ a {
       font-size: 20px;
       line-height: 24px;
       color: $dark-color;
+
+      @media (max-width: 1280px) {
+        display: none;
+      }
 
       &:hover {
         transition: .4s;
