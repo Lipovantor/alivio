@@ -135,8 +135,47 @@ a {
     }
   }
 
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 60px 120px 60px 60px;
+    background-color: $light-color;
+    border-radius: 0 0 0 6px;
+    box-shadow: -2px 5px 6px rgba(165, 165, 165, 0.25);
+
+    &__signin {
+      margin-bottom: 35px;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 24px;
+      color: $dark-color;
+      text-decoration: underline;
+    }
+
+    &__item {
+      margin-bottom: 20px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: $text-alt-color;
+    }
+  }
+
   .burger {
+    display: none;
     margin-left: 20px;
+    width: 30px;
+    height: 26px;
+    background-image: url("../img/burger.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &-active {
+      background-image: url("../img/close.svg");
+    }
 
     @media (max-width: 1280px) {
       display: block;
