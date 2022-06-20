@@ -134,7 +134,10 @@
 
     &_right {
       width: 60%;
+      height: 515px;
       position: relative;
+      border-radius: 16px;
+      overflow: hidden;
     }
   }
 
@@ -167,11 +170,19 @@
     }
   }
 
-  &__img {
+  &__img,
+  &__video {
+    object-fit: cover;
     width: 100%;
-    max-width: 825px;
-    max-height: 515px;
-    border-radius: 16px;
+    height: 100%;
+  }
+
+  &__img {
+    display: block;
+  }
+
+  &__video {
+    display: none;
   }
 
   &__start {

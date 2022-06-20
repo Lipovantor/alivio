@@ -85,8 +85,12 @@
           <a href="#" title="" class="story__button button button_green">Let’s get started</a>
         </div>
         <div class="story__col story__col_right">
-          <img src="img/video-poster.jpg" alt="video" class="story__img">
-          <button class="story__start">
+          <img src="img/video-poster.jpg" alt="video" class="story__img" id="story-img">
+          <video controls autoplay class="story__video" id="story-video">
+            <source src="video/Library - 38919.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <button class="story__start" id="start">
             <span class="story__start-fill"></span>
             <svg class="story__start-svg"  width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_40045_5)">
@@ -143,6 +147,8 @@
       </nav>
     </div>
   </footer>
+
+  <script src="scripts.js"></script>
 
 </body>
 </html>

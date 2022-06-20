@@ -3,6 +3,10 @@
 @import "variables";
 @import "home";
 
+section {
+  overflow: hidden;
+}
+
 .main {
   min-height: 50vh;
 }
